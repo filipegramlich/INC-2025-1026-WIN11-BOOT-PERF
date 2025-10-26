@@ -122,7 +122,7 @@ Get-CimInstance Win32_ComputerSystem | Select-Object TotalPhysicalMemory
 - Windows 11 optimized for SSD random I/O
 - **This explains the persistent boot delays**
 
-  ## 🎯 Findings
+  ## Findings
 
 ### Root Causes Identified
 
@@ -133,20 +133,7 @@ Get-CimInstance Win32_ComputerSystem | Select-Object TotalPhysicalMemory
 | F-03 | Warsaw Technology (GAS) | CPU overhead (~90 units) during boot | **Medium** |
 
 
-### MITRE ATT&CK Mapping
-
-Investigation techniques mapped to MITRE framework:
-
-- **T1082** - System Information Discovery
-- **T1057** - Process Discovery
-- **T1049** - System Network Connections Discovery
-- **T1083** - File and Directory Discovery
-- **T1547.001** - Boot/Logon Autostart Execution: Registry Run Keys
-- **T1543.003** - Create or Modify System Process: Windows Service
-
----
-
-## 🛠️ Remediation
+## Remediation
 
 ### Immediate Actions (Software)
 
